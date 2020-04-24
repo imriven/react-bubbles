@@ -1,5 +1,6 @@
 import Styled from "styled-components"
-
+import Background from "../media/color1.jpg"
+import { titleKeyFrame } from "../media/keyframes"
 
 
 export const BackgroundContainer = Styled.div`
@@ -23,6 +24,10 @@ font-size: 1.8em;
 `
 export const LinkContainerDiv = Styled.div`
 margin-bottom: 5%;
+`
+
+export const TitleDiv = Styled.div`
+animation: ${titleKeyFrame} 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 `
 
 export const AddColorWrap = Styled.div`
@@ -54,6 +59,7 @@ justify-content:center;
 background-size:cover;
 height:100vmin;
 width: auto;
+background-image: url(${Background});
 
 `
 
