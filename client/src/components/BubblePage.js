@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/auth"
 import { BackgroundContainer } from "../styles/index"
-
-
 import Bubbles from "./Bubbles";
 import ColorList from "./ColorList";
 
@@ -22,10 +20,10 @@ const BubblePage = () => {
   getColors();
   }, []);
   return (
-    <>
+    < BackgroundContainer>
       <ColorList colors={colorList} updateColors={getColors} />
       <Bubbles colors={colorList} />
-    </>
+    </ BackgroundContainer>
   );
 };
 

@@ -5,11 +5,10 @@ import { titleKeyFrame } from "../media/keyframes"
 
 export const BackgroundContainer = Styled.div`
 display: flex;
-justify-content: center;
-flex-wrap: wrap;
-background: linear-gradient(19deg, rgba(63,94,251,0.6895133053221288) 0%, rgba(252,70,107,0.6222864145658263) 100%);
+flex-direction:row;
+background: linear-gradient(19deg, rgba(63,94,251,0.4896073903002309) 0%, rgba(252,70,107,0.3556581986143187) 100%);
 margin: 5% 0;
-width: 60%;
+width: 80%;
 text-align: center;
 border-radius:25px;
 `
