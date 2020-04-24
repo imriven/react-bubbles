@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/auth"
+import { BackgroundContainer } from "../styles/index"
 
 
 import Bubbles from "./Bubbles";

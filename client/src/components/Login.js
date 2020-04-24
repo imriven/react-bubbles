@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom"
 import axios from "axios"
-import { ImageBackground, ContainerDiv, AwesomeLabel, AwesomeInput } from "../styles/index"
-
+import { ContainerDiv, AwesomeLabel, AwesomeInput, TitleDiv, AwesomeButton, ExcellentHeader } from "../styles/index"
+import RainbowText from "react-rainbow-text"
 
 const Login = () => {
     const history = useHistory()
@@ -33,7 +33,7 @@ const Login = () => {
     return (
         <ContainerDiv>
              <form onSubmit={handleLogin}>
-        <h1>Welcome to the Bubble App!</h1> 
+        <TitleDiv><ExcellentHeader><RainbowText>Welcome to the Bubble App!</RainbowText></ExcellentHeader></TitleDiv>
           <AwesomeLabel htmlFor="username">
            User Name: 
             <AwesomeInput
@@ -59,7 +59,7 @@ const Login = () => {
             />
           </AwesomeLabel>
         
-          <button onClick={handleLogin}>Login</button>
+          <AwesomeButton onClick={handleLogin}>Login</AwesomeButton>
           </form>
         </ContainerDiv>
     )

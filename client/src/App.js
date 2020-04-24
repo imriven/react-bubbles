@@ -4,14 +4,15 @@ import PrivateRoute from './utils/routes';
 import Login from "./components/Login";
 import "./styles.scss";
 import BubblePage from "./components/BubblePage"
+import { ImageBackground } from "./styles/index"
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <ImageBackground>
         <Route exact path="/" component={Login} />
         <PrivateRoute path="/BubblePage" component={BubblePage} />
-      </div>
+      </ImageBackground>
     </Router>
   );
 }
